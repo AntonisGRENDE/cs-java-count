@@ -2,9 +2,29 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="private" />
+      <option name="name" value="Private" />
+      <option name="url" value="http://zuul/nexus/content/groups/private" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="releases" />
+      <option name="name" value="Releases" />
+      <option name="url" value="http://zuul/nexus/content/repositories/releases" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="public" />
+      <option name="name" value="Public" />
+      <option name="url" value="http://zuul/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="snapshots" />
+      <option name="name" value="Snapshots" />
+      <option name="url" value="http://zuul/nexus/content/repositories/snapshots" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
@@ -15,6 +35,11 @@
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="http://zuul/nexus/content/repositories/central" />
     </remote-repository>
   </component>
 </project>
