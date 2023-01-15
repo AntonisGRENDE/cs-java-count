@@ -27,4 +27,4 @@ test1@test.com,321,google.com
 ### The bonus:
 
 - solve the same problem in another language like javascript (node), python or go
-- create a frontend that displays the result
+- create a frontend that displays the result 

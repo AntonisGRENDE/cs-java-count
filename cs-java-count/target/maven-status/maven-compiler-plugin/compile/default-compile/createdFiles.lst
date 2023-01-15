@@ -1,4 +1,8 @@
-Main\Service\UniqueVisitors.class
-Main\Controller\ControllerClass.class
-Main\model\User.class
-Main\MainApplication.class
+main\controller\Controller.class
+main\model\User.class
+main\exception\ControllerException.class
+main\service\GenerateData.class
+main\MainApplication.class
+main\service\Visitors.class
+main\dto\Request.class
+main\exception\ApplicationException.class
