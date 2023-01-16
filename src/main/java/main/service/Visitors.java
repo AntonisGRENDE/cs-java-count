@@ -9,6 +9,7 @@ import org.springframework.web.server.ResponseStatusException;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.*;
 
 public class Visitors {
@@ -39,8 +40,8 @@ public class Visitors {
         }
         catch (FileNotFoundException ex) {
             throw new ApplicationException(HttpStatus.BAD_REQUEST, "The file path could not be found");
-        } catch (Exception ex){
-            throw new ApplicationException(HttpStatus.INTERNAL_SERVER_ERROR, ex.getMessage());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 
