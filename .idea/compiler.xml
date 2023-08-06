@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="cs-java-count" target="18" />
+      <module name="cs-java-count" target="19" />
     </bytecodeTargetLevel>
   </component>
 </project>

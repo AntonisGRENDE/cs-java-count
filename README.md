@@ -9,6 +9,7 @@ As input you have a csv file, that contains:
 ```
 email,phone,source
 test@test.com,123,google.com
+test@test.com,321,google.com
 test@test.com,123,opera.com
 test@test.com,,google.com
 test1@test.com,321,google.com

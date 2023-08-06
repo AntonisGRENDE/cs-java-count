@@ -16,4 +16,14 @@ public class User {
                 ", phone='" + phone + '\'' +
                 ", source='" + source + '\'';
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        try {
+            User user = (User) obj;
+            return this.email.equals(user.email) && (this.phone.equals(user.phone));
+        } catch (ClassCastException ex){
+            return false;
+        }
+    }
 }

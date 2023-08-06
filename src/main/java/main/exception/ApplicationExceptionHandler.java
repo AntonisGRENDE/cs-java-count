@@ -8,15 +8,14 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @ControllerAdvice
 public class ApplicationExceptionHandler {
 
-    @ExceptionHandler(value= { ApplicationException.class})
+    @ExceptionHandler(value= { ApplicationException.class })
     protected ResponseEntity<Object> handleMethodArgumentNotValid(ApplicationException ex) {
-
         return new ResponseEntity<>(ex.getMessage(), ex.getStatus());
     }
 
 
-    @ExceptionHandler(value= { Exception.class})
-    protected ResponseEntity<Object> generalExc(ApplicationException ex) {
+    @ExceptionHandler(value= { Exception.class } )
+    protected ResponseEntity<Object> generalExc(Exception ex) {
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
     }
 

@@ -1,7 +1,6 @@
 package main.controller;
 
 import main.dto.Request;
-import main.model.User;
 import main.service.Visitors;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.List;
 
 @RestController
 public class Controller {
@@ -21,9 +19,8 @@ public class Controller {
         modelAndView.setViewName("index.html");
         return modelAndView;
     }
-
     @PostMapping("/")
-    public List<User> findUniqueVisitors(@RequestBody @NotNull Request r){
-        return Visitors.readFileRetVi(r.path);
+    public Object findUniqueVisitors(@RequestBody @NotNull Request r){
+        return Visitors.readFileReturnVisitors(r.path);
     }
 }
